@@ -1,0 +1,22 @@
+
+picture.opt{display:contents}
+picture.opt>source{display:none!important}
+img{height:auto;max-width:100%}
+.header__brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:1}
+.header__badge{display:flex;align-items:center;gap:6px;padding-left:10px;border-left:1px solid #ececec;font-size:11px;line-height:1.15;color:#666}
+.header__badge img{height:20px;width:auto}
+.footer__branches{display:flex;flex-direction:column;gap:3px;margin-top:10px;font-style:normal;font-size:13px;line-height:1.4}
+.footer__branches span{display:block}
+.footer__db{display:block;height:28px;width:auto;margin-top:8px}
+#logo>a{display:flex;align-items:center;gap:8px}
+#logo .st-badge{display:flex;align-items:center;gap:6px;padding-left:8px;border-left:1px solid rgba(255,255,255,.45);color:#fff;font-size:11px;line-height:1.15}
+#logo .st-badge img{height:18px;width:auto}
+#logo img.header-logo,#logo img.header-logo-dark{width:auto;max-width:148px;height:auto}
+@media(max-width:768px){
+  .header__badge{padding-left:6px;gap:4px;font-size:9px}
+  .header__badge span{max-width:78px}
+  .header__badge img{height:16px}
+  #logo .st-badge{font-size:9px;padding-left:6px}
+  #logo .st-badge span{max-width:72px}
+  #logo img.header-logo,#logo img.header-logo-dark{max-width:108px}
+}
