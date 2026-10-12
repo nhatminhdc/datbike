@@ -12,9 +12,31 @@ img{height:auto;max-width:100%}
 .st-branch-nav{display:flex;gap:6px;overflow:auto;padding:8px;background:#fff;border-top:1px solid #ececec}
 .st-branch-nav button{flex:0 0 auto;border:1px solid #e4e4e4;background:#fff;border-radius:999px;padding:6px 10px;font-size:12px;line-height:1.2;cursor:pointer;color:#222}
 .st-branch-nav button.is-on{background:#f16523;color:#fff;border-color:#f16523}
-.header__brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:1}
-.header__badge{display:flex;align-items:center;gap:6px;padding-left:10px;border-left:1px solid #ececec;font-size:11px;line-height:1.15;color:#666}
-.header__badge img{height:20px;width:auto}
+.header__inner{flex-wrap:nowrap;gap:8px}
+.header__brand{display:flex;align-items:center;gap:6px;min-width:0;flex:0 1 228px;max-width:228px}
+.header__logo{height:30px;width:auto;max-width:100px}
+.header__badge{display:flex;align-items:center;gap:4px;padding-left:6px;border-left:1px solid #ececec;font-size:9px;line-height:1.05;color:#666;min-width:0}
+.header__badge span{display:block;max-width:86px}
+.header__badge img{height:14px;width:auto;flex:0 0 auto}
+.header__nav{flex:1 1 auto;justify-content:center;min-width:0;gap:16px}
+.header__actions{flex:0 0 auto;gap:8px}
+.header__lang{gap:6px;margin-left:8px}
+.nav-item,.nav-item--link,.header__lang,.header__lang-text,.btn--cta{white-space:nowrap}
+@media(max-width:1366px){
+  .header__nav{gap:10px}
+  .nav-item{font-size:14px;gap:4px}
+  .btn--cta{padding:8px 14px}
+  .header__logo{height:26px;max-width:84px}
+  .header__brand{max-width:190px;flex-basis:190px}
+  .header__badge span{max-width:68px}
+}
+@media(max-width:1200px){
+  .header__nav{gap:8px}
+  .nav-item{font-size:13px}
+  .btn--cta{padding:6px 12px;font-size:13px}
+  .header__lang-text{font-size:13px}
+  .header__lang-flag{width:28px;height:18px}
+}
 .footer__branches{display:flex;flex-direction:column;gap:3px;margin-top:10px;font-style:normal;font-size:13px;line-height:1.4}
 .footer__branches span{display:block}
 .footer__db{display:block;height:28px;width:auto;margin-top:8px}
@@ -23,9 +45,11 @@ img{height:auto;max-width:100%}
 #logo .st-badge img{height:18px;width:auto}
 #logo img.header-logo,#logo img.header-logo-dark{width:auto;max-width:148px;height:auto}
 @media(max-width:768px){
+  .header__brand{max-width:none;flex-basis:auto;gap:4px}
+  .header__logo{height:26px;max-width:88px}
   .header__badge{padding-left:6px;gap:4px;font-size:9px}
-  .header__badge span{max-width:78px}
-  .header__badge img{height:16px}
+  .header__badge span{max-width:70px}
+  .header__badge img{height:14px}
   #logo .st-badge{font-size:9px;padding-left:6px}
   #logo .st-badge span{max-width:72px}
   #logo img.header-logo,#logo img.header-logo-dark{max-width:108px}
